@@ -36,7 +36,7 @@ function eightBitBinary(n) {
 
 export default function presentation() {
 
-  const [currSlideNo, setCurrSlideNo] = useState(1);
+  const [currSlideNo, setCurrSlideNo] = useState(0);
   const [slide1Hints, setSlide1Hints] = useState(false);
   const [binaryFlip, setBinaryFlip] = useState([0, 0, 0, 0]);
   const [showBinCalc, setShowBinCalc] = useState(true);
