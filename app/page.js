@@ -1,8 +1,7 @@
 "use client"
 
-import RangeSlider from "react-range-slider-input";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./page.module.css";
 
 const power_map = new Map();
