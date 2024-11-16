@@ -26,7 +26,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 60px;
 }
 
@@ -83,17 +83,20 @@
   background-color: #232d3f;
   padding: 1%;
   margin-bottom: 10px;
+  margin-top: 1px;
+  border-radius: 5%;
 }
 
 .two_col {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;  
+  justify-content: space-evenly;
+  gap: 40px;
 }
 
 .two_col div{
-  flex-grow: 0.5;
+  /* flex-grow: 0.5; */
   padding-left: 1%;
   padding-right: 1%;
   border-radius: 25px;
@@ -101,12 +104,6 @@
 
 .bg_btn {
   background-color: #455d7a;
-}
-
-.surprise {
-  text-align: center;
-  background-color: #005b41;
-  margin-top: 20px;
 }
 
 .binary_cards_holder {
@@ -147,4 +144,119 @@
 .binary_flip_btn_on:hover {
   background-color: #455d7a;
   box-shadow: -6px 6px 0px 0px #ff5f15;
+}
+
+.slider_container {
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.slider label {
+  width: 60px;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+
+.slider input[type="range"] {
+  flex: 1;
+  height: 8px;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Red slider specific styling */
+.redSlider {
+  background: linear-gradient(to right, black, #ef4444);
+}
+
+/* Green slider specific styling */
+.greenSlider {
+  background: linear-gradient(to right, black, #22c55e);
+}
+
+/* Blue slider specific styling */
+.blueSlider {
+  background: linear-gradient(to right, black, #3b82f6);
+}
+
+/* Styling the slider thumb */
+.slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #e5e7eb;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-top: -4px;
+}
+
+.slider input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #e5e7eb;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover state for the thumb */
+.slider input[type="range"]:hover::-webkit-slider-thumb {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slider input[type="range"]:hover::-moz-range-thumb {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Value display styling */
+.slider span {
+  width: 48px;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+
+.color_box_holder {
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.two_col ul>li {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.small_ul ul>li {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.bin_holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 0px;
+}
+
+.bin_holder span {
+  font-weight: 400;
+  font-size: 1rem;
 }
